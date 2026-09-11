@@ -1,4 +1,5 @@
-docs/
-tests/
 *.log
+*.o
 *.exe
+docs/
+.vscode/*.log

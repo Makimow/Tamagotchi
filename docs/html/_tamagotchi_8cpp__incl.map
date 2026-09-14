@@ -1,0 +1,13 @@
+<map id="src/Tamagotchi.cpp" name="src/Tamagotchi.cpp">
+<area shape="rect" id="Node000001" title="Implémentation de la classe Tamagotchi." alt="" coords="60,5,195,32"/>
+<area shape="rect" id="Node000002" href="$_tamagotchi_8h.html" title=" " alt="" coords="35,80,135,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,30,102,68,98,65,119,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,77,181"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="85,35,53,53,38,66,26,81,21,95,21,110,29,140,24,141,16,111,16,94,21,79,34,62,50,49,88,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="122,155,176,181"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="134,30,149,80,153,140,148,138,144,80,131,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="210,80,267,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="147,30,209,71,204,72,147,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,106,59,143,54,140,75,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="97,105,130,143,125,143,95,110"/>
+</map>

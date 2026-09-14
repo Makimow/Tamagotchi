@@ -1,8 +1,8 @@
 /**
  * @file main.cpp
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
+ * @author Antonin Hornoy (hornoyantonin@gmail.com)
+ * @brief Point d'entrée du jeu Tamagotchi en mode console.
+ * @version 0.5
  * @date 2026-09-14
  * 
  * @copyright Copyright (c) 2026
@@ -15,9 +15,17 @@
 using namespace std;
 
 /**
- * @brief 
+ * @brief Fonction principale du jeu.
  * 
- * @return int 
+ * Déroulement d'une partie :
+ * 1. Le joueur choisit combien de Tamagotchis créer et leur donne un nom.
+ * 2. Chaque tour de jeu, le joueur choisit un Tamagotchi et une action
+ *    (le nourrir ou lui parler).
+ * 3. À la fin de chaque tour, tous les Tamagotchis perdent 1 point
+ *    d'énergie (voir Tamagotchi::vivre()).
+ * 4. La partie se termine quand un Tamagotchi meurt.
+ * 
+ * @return 0 si le programme s'est terminé normalement.
  */
 int main() {
     int n;

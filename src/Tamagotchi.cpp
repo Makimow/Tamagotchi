@@ -1,8 +1,8 @@
 /**
  * @file Tamagotchi.cpp
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
+ * @author Antonin Hornoy (hornoyantonin@gmail.com)
+ * @brief Implémentation de la classe Tamagotchi.
+ * @version 0.5
  * @date 2026-09-14
  * 
  * @copyright Copyright (c) 2026
@@ -15,19 +15,21 @@
 using namespace std;
 
 /**
- * @brief Construct a new Tamagotchi:: Tamagotchi object
+ * @brief Construit un nouveau Tamagotchi.
  * 
- * @param nom_u 
+ * @param nom_u Nom choisi par le joueur pour ce Tamagotchi.
  */
 Tamagotchi::Tamagotchi(string nom_u) {
     nom = nom_u;
-    maxEnergie = rand()%5 + 5;
-    energie = rand()%4 + 2;
+    maxEnergie = rand()%5 + 5; ///< Énergie max aléatoire entre 5 et 9.
+    energie = rand()%4 + 2; ///< Énergie initiale aléatoire entre 2 et 5.
 }
 
 /**
- * @brief 
+ * @brief Affiche l'état courant du Tamagotchi.
  * 
+ * Le Tamagotchi est "heureux" si son énergie est strictement supérieure
+ * à 5, sinon il est "affamé". Il affiche aussi ses niveaux d'énergie.
  */
 void Tamagotchi::parler() {
     string etat;
@@ -40,8 +42,11 @@ void Tamagotchi::parler() {
 }
 
 /**
- * @brief 
+ * @brief Nourrit le Tamagotchi.
  * 
+ * Augmente l'énergie d'une valeur aléatoire entre 1 et 2 points.
+ * Si l'énergie dépasse maxEnergie, elle est plafonnée à cette valeur.
+ * Rien ne se passe si le Tamagotchi est déjà rassasié.
  */
 void Tamagotchi::manger() {
     int augmentation = rand()%2 + 1;
@@ -57,10 +62,13 @@ void Tamagotchi::manger() {
 }
 
 /**
- * @brief 
+ * @brief Fait vivre le Tamagotchi pendant un tour de jeu.
  * 
- * @return true 
- * @return false 
+ * Consomme 1 point d'énergie et annonce que le Tamagotchi survit.
+ * Si l'énergie est déjà à 0 ou moins, le Tamagotchi meurt.
+ * 
+ * @return true si le Tamagotchi est toujours en vie,
+ *         false s'il vient de mourir.
  */
 bool Tamagotchi::vivre() {
     if (energie <= 0) {
